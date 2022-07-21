@@ -17,7 +17,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Monserat', sans-serif;
 }
 
 main {
@@ -351,7 +351,7 @@ button {
 }
 
 .input-checkbox:checked + label::before {
-	background-color: #0b76ef;
+	background-color: #6E41E2;
 	background-image: url('../images/icons/chekbox-selected.svg');
 }
 
@@ -420,7 +420,7 @@ button {
 
 .header {
 	border-bottom: 1px solid lightgrey;
-	padding: 0px 20px;
+	padding: 10px 20px;
 }
 
 .header-wrapper {
@@ -442,14 +442,15 @@ button {
 	margin-right: 56px;
 }
 
-.header-nav__menu li {
+
+
+.header-nav__menu a {
 	min-height: 100%;
 	padding: 22px 0px;
-	border-bottom: 2px solid transparent;
 }
 
-.header-nav__menu li:hover {
-	border-bottom-color: rgba(17, 17, 17, 0.48);
+.header-nav__menu a:hover {
+	border-bottom: 2px solid rgba(17, 17, 17, 0.48);
 }
 
 .header-nav__overlay {
@@ -533,10 +534,13 @@ button {
 .catalog-cards__item__progress {
 	background: #27ae60;
 	width: 12%;
+	height: 24px;
 	color: #fff;
 	white-space: nowrap;
 	padding: 10px 20px;
 	border-top-left-radius: 8px;
+	display: flex;
+	align-items: center;
 }
 
 .catalog-cards__item__avatar {
@@ -552,10 +556,15 @@ button {
 .catalog-cards__item__avatar__photo {
 	width: 56px;
 	height: 56px;
+	border: 3px solid white;
+	border-radius: 50%;
 }
 
 .catalog-cards__item__avatar__photo img {
 	border-radius: 50%;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
 }
 
 .catalog-cards__item__back__one {
@@ -777,7 +786,8 @@ button {
 		margin-top: 100px;
 	}
 
-	.header-nav__menu li {
+	.header-nav__menu a {
+		padding: 10px;
 		color: #6e41e2;
 		min-height: auto;
 		font-size: 40px;
