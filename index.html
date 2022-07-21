@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk" class="light-theme">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Course catalog</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script defer src="./app/index.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-wrapper">
+				<div class="header-logo">
+					<a class="heading-5" href="#">Logo</a>
+				</div>
+				<nav class="header-nav">
+					<ul class="header-nav__menu">
+						<li class="gray paragraph-2">
+							<a href="#">Free test</a>
+						</li>
+						<li class="gray paragraph-2 active">
+							<a href="#">Catalog</a>
+						</li>
+						<li class="gray paragraph-2">
+							<a href="#">Help</a>
+						</li>
+					</ul>
+					<div class="header-account">
+						<div class="header-account__name">
+							<a href="./pages/form.html" class="paragraph-2 primary">Michael Browk</a>
+						</div>
+						<div class="header-account__avatar">
+							<a href="./pages/form.html">
+								<img src="./images/avatars/🦁lion.svg" alt="" />
+							</a>
+						</div>
+					</div>
+				</nav>
+				<button class="button header-nav__trigger">
+					<img src="./images/icons/trigger.svg" alt="" />
+				</button>
+				<div class="header-nav__overlay"></div>
+			</div>
+		</header>
+		<main>
+			<section class="catalog">
+				<div class="container">
+					<div class="col-7 col-md-6">
+						<h1 class="catalog-title heading-3">Course catalog</h1>
+						<p class="catalog-text paragraph-2">
+							Each course contains video lectures, tasks, and text materials. All courses viewed by you are displayed in your personal
+							account
+						</p>
+					</div>
+					<div class="catalog-search">
+						<input type="text" name="search" class="input catalog-search__input paragraph-2 col-9 col-sm-6" placeholder="Search" />
+							<select class="select col-3 col-sm-5">
+								<option value="1">Russia</option>
+								<option value="2" selected>USA</option>
+								<option value="3">Germany</option>
+							</select>
+					</div>
+					<div class="catalog-cards row">
+						<div class="column col-4 col-md-3 col-sm-6">
+							<div class="catalog-cards__item">
+								<div class="catalog-cards__item__back catalog-cards__item__back__one">
+									<div class="catalog-cards__item__progress paragraph-3">Progress 12%</div>
+									<div class="catalog-cards__item__avatar">
+										<div class="catalog-cards__item__avatar__photo">
+											<a href="">
+												<img src="./images/photos/ava-1.png" alt="" />
+											</a>
+										</div>
+										<p class="paragraph-2">Alexa</p>
+									</div>
+								</div>
+								<div class="catalog-cards__item__wrapper">
+									<div class="catalog-cards__item__text heading-6">Take exam in Mathematics at 100 points</div>
+									<div class="catalog-cards__item__info">
+										<div class="catalog-cards__item__lessons">
+											<a href="">
+												<img src="./images/icons/student.svg" alt="" />
+												<span class="paragraph-2">12 lessons</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__tasks">
+											<a href="">
+												<img src="./images/icons/pen.svg" alt="" />
+												<span class="paragraph-2">12 tasks</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__minutes">
+											<a href="">
+												<img src="./images/icons/video.svg" alt="" />
+												<span class="paragraph-2">30 minutes</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-cards__item__nav">
+									<button class="button button-secondary paragraph-2">Continue</button>
+									<button class="button paragraph-2">More</button>
+								</div>
+							</div>
+						</div>
+						<div class="column col-4 col-md-3 col-sm-6">
+							<div class="catalog-cards__item">
+								<div class="catalog-cards__item__back catalog-cards__item__back__two">
+									<div class="catalog-cards__item__progress paragraph-3">Progress 12%</div>
+									<div class="catalog-cards__item__avatar">
+										<div class="catalog-cards__item__avatar__photo">
+											<a href="">
+												<img src="./images/photos/ava-2.png" alt="" />
+											</a>
+										</div>
+										<p class="paragraph-2">Kathryn Nguyen</p>
+									</div>
+								</div>
+								<div class="catalog-cards__item__wrapper">
+									<div class="catalog-cards__item__text heading-6">How buy new clothes without money in USA</div>
+									<div class="catalog-cards__item__info">
+										<div class="catalog-cards__item__lessons">
+											<a href="">
+												<img src="./images/icons/student.svg" alt="" />
+												<span class="paragraph-2">12 lessons</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__tasks">
+											<a href="">
+												<img src="./images/icons/pen.svg" alt="" />
+												<span class="paragraph-2">12 tasks</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__minutes">
+											<a href="">
+												<img src="./images/icons/video.svg" alt="" />
+												<span class="paragraph-2">30 minutes</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-cards__item__nav">
+									<button class="button button-secondary paragraph-2">Continue</button>
+									<button class="button paragraph-2">More</button>
+								</div>
+							</div>
+						</div>
+						<div class="column col-4 col-md-3 col-sm-6">
+							<div class="catalog-cards__item">
+								<div class="catalog-cards__item__back catalog-cards__item__back__three">
+									<div class="catalog-cards__item__progress paragraph-3">Progress 12%</div>
+									<div class="catalog-cards__item__avatar">
+										<div class="catalog-cards__item__avatar__photo">
+										<a href="">
+											<img src="./images/photos/ava-3.png" alt="" />
+										</a>
+										</div>
+										<p class="paragraph-2">Diane Miles</p>
+									</div>
+								</div>
+								<div class="catalog-cards__item__wrapper">
+									<div class="catalog-cards__item__text heading-6">Why people hate me?</div>
+									<div class="catalog-cards__item__info">
+										<div class="catalog-cards__item__lessons">
+											<a href="">
+												<img src="./images/icons/student.svg" alt="" />
+												<span class="paragraph-2">12 lessons</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__tasks">
+											<a href="">
+												<img src="./images/icons/pen.svg" alt="" />
+												<span class="paragraph-2">12 tasks</span>
+											</a>
+										</div>
+										<div class="catalog-cards__item__minutes">
+											<a href="">
+												<img src="./images/icons/video.svg" alt="" />
+												<span class="paragraph-2">30 minutes</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-cards__item__nav">
+									<button class="button button-secondary paragraph-2">Continue</button>
+									<button class="button paragraph-2">More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">Vitalii Horodetskyi 2022 ©</footer>
+	</body>
+</html>
